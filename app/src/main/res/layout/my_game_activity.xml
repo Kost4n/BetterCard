@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/textTitleGame"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="You have to choose the best picture!\n Round One"/>
+
+    <ImageView
+        android:id="@+id/firstPicture"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/i1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitleGame"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:id="@+id/secondPicture"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/i5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstPicture"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:id="@+id/finalPicture"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/i5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"/>
+
+    <android.widget.Button
+        android:id="@+id/gameNextButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Next pair of pictures"
+        android:background="@drawable/bg_button"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondPicture"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
